@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+
+<Button
+    android:id="@+id/mi_one1_btn"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:text="A：我是聪明的小帅哥！" />
+
+<Button
+    android:id="@+id/mi_one2_btn"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:text="A"
+    android:layout_below="@+id/mi_one1_btn"
+    android:layout_marginTop="54dp" />
+
+<Button
+    android:id="@+id/mi_one3_btn"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:text="B"
+    android:layout_alignTop="@+id/mi_one2_btn"
+    android:layout_toRightOf="@+id/mi_one1_btn"
+    android:layout_toEndOf="@+id/mi_one1_btn" />
+
+
+</RelativeLayout>
