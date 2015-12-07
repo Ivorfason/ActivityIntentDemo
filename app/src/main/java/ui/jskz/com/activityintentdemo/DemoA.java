@@ -64,10 +64,14 @@ public class DemoA extends Activity implements View.OnClickListener {
         }
     }
 
-    @Override
+     @Override
     protected void onActivityResult(int requestCode, int resultCode, Intent data) {
-        firstname = data.getExtras().getString("firstname");
-        secondname = data.getExtras().getString("secondname");
-        Toast.makeText(getApplicationContext(), "恭喜小帅哥回到DemoA！", Toast.LENGTH_SHORT).show();
+        if(data == null) {
+            Toast.makeText(getApplicationContext(), "请重新输入M、O的值！", Toast.LENGTH_SHORT).show();
+        } else {
+            firstname = data.getExtras().getString("firstname");
+            secondname = data.getExtras().getString("secondname");
+            Toast.makeText(getApplicationContext(), "恭喜小帅哥回到DemoA！", Toast.LENGTH_SHORT).show();
+        }
     }
 }
